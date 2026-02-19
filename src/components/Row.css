@@ -1,0 +1,32 @@
+.row {
+  margin-left: 20px;
+  color: white;
+}
+
+.row h2 {
+  margin-left: 10px;
+}
+
+.row_posters {
+  display: flex;
+  gap: 10px;               /* clean spacing */
+  overflow-x: auto;
+  padding: 20px 10px;
+  scroll-behavior: smooth;
+}
+
+.row_posters::-webkit-scrollbar {
+  display: none;           /* hide scrollbar */
+}
+
+.row_poster {
+  width: 160px;            /* fixed width */
+  height: 240px;           /* fixed height */
+  object-fit: cover;
+  border-radius: 6px;
+  transition: transform 0.3s ease;
+}
+
+.row_poster:hover {
+  transform: scale(1.08);
+}
